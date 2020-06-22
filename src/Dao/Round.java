@@ -4,8 +4,8 @@ import static java.lang.String.format;
 public class Round {
     public static double round(double r)
     {
-        double mianji=r*r*Math.PI;
-        return mianji;
+        double area=r*r*Math.PI;
+        return area;
     }
     public static void main(String[] args) {
         double r=2;
