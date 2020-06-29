@@ -3,17 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>注册</title>
+    <style>
+        body{
+            background-color: #faf5e3;
+        }
+       form{
+            position: absolute;
+            top: 30%;
+            left: 40%;
+
+        }
+        .fm-name1 {
+            background-color: #faf5e3;
+            background-image: -webkit-gradient(linear,left top,right top,from(#faf5e3),to(#faf5e3));
+            background-image: linear-gradient(90deg,#faf5e3,#faf5e3);
+            border: 1px solid #faf5e3;
+            border-radius: 3px;
+            font-size: 20px;
+            height: 42px;
+            line-height: 42px;
+            outline: none;
+            color: #000;
+            width: 20%;
+            cursor: pointer;
+            position:fixed;
+        }
+    </style>
 </head>
 <body>
-    <div align="middle">
-        <form action="register.jsp" method="post">
+<br>
+<h1 align="center"><b>用 户 注 册</b></h1>
+    <div>
+        <form action="register.jsp" method="post" class="fm-name1">
             设置账号：<input type="text" name="username"><br>
             设置密码：<input type="password" name="password"><br>
             确认密码：<input type="password" name="password1"><br>
             <input type="reset" value="RESET">
             <input type="submit"value="SUBMIT"> <br>
+            已有账号？<a href="login.html">请登录</a>
         </form>
     </div>
-已有账号？<a href="login.html">请登录</a>
+
 </body>
 </html>

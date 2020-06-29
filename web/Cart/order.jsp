@@ -10,6 +10,12 @@
 <html>
 <head>
     <title>Title</title>
+    <style>
+        body
+        {
+            background-color: #faf5e3;
+        }
+    </style>
 </head>
 <body>
 <jsp:useBean id="car" scope="page" class="Dao.CountPrice">
@@ -66,7 +72,7 @@
     </table>
     <div align="center">
     <div >总价为：<jsp:getProperty  name="car" property="total_price"/></div>
-    <button>立即付款</button>
+        <a href="pay.html"><button>立即支付</button></a>
     <a href="index.jsp"><button>取消订单</button></a>
     </div>
 </jsp:useBean>
