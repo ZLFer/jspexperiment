@@ -1,4 +1,4 @@
-<%@ page import="Dao.UserDao" %>
+<%@ page import="Dao.UserDao2" %>
 <%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: LittleOne
@@ -17,7 +17,7 @@ password=<%=request.getParameter("password")%>
 <%
     String username=request.getParameter("username");
     String password=request.getParameter("password");
-    if(UserDao.login(username,password))
+    if(UserDao2.login(username,password))
     {
         out.println("welcome "+username);
         session.setAttribute("name",username);
@@ -25,8 +25,7 @@ password=<%=request.getParameter("password")%>
     }
     else
     {
-        out.println("登陆失败");
-        response.sendRedirect("login.html");
+        out.print("<script>alert('登陆失败！请重新输入账号密码！'); window.location='login.html' </script>");
     }
 %>
 </body>

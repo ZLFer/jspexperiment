@@ -28,18 +28,28 @@
             cursor: pointer;
             position:fixed;
         }
+        h1{
+            color: bisque;
+            text-shadow:2px 2px #6c6969;
+            font-family: 楷体;
+            font-size: 35px;
+        }
+        .submit{
+            background: #ff9000;
+            color: #fff;
+            border-radius: 25px;
+        }
     </style>
 </head>
 <body>
-<br>
+<br><br><br>
 <h1 align="center"><b>用 户 注 册</b></h1>
     <div>
         <form action="register.jsp" method="post" class="fm-name1">
             设置账号：<input type="text" name="username"><br>
             设置密码：<input type="password" name="password"><br>
             确认密码：<input type="password" name="password1"><br>
-            <input type="reset" value="RESET">
-            <input type="submit"value="SUBMIT"> <br>
+            <input class="submit" style="width: 260px;height: 30px;" type="submit"value="点击注册"> <br>
             已有账号？<a href="login.html">请登录</a>
         </form>
     </div>

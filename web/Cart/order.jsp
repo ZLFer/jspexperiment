@@ -15,6 +15,13 @@
         {
             background-color: #faf5e3;
         }
+        table
+        {
+            border: #ff9000;
+            width: 300px;
+            height: 400px;
+        }
+
     </style>
 </head>
 <body>
@@ -27,6 +34,13 @@
     尊敬的用户：<%=
     session.getAttribute("name")
     %>;
+    <%
+        if (session.getAttribute("name") != null) {
+            out.println("<a href='logout.jsp'>注销</a>");
+        } else {
+            out.println("<a href='login.html'>请登录</a>");
+        }
+    %>
     <p align="center">您选购的订单详情如下:</p>
     <table cellpadding="0" border="1" align="center">
         <thead>
