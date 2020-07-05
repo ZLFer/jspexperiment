@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="Dao.CountPrice" %>
+<%@ page import="Dao.TotalPrice" %>
 <html>
 <head>
     <title>Title</title>
@@ -25,7 +25,8 @@
     </style>
 </head>
 <body>
-<jsp:useBean id="car" scope="page" class="Dao.CountPrice">
+
+<jsp:useBean id="car" scope="page" class="Dao.TotalPrice">
     <jsp:setProperty name="car" property="num_apple" param="apple"/>
     <jsp:setProperty name="car" property="num_orange" param="orange"/>
     <jsp:setProperty name="car" property="num_banana" param="banana"/>
@@ -41,6 +42,7 @@
             out.println("<a href='login.html'>请登录</a>");
         }
     %>
+    <h1 align="center">购 物 车</h1>
     <p align="center">您选购的订单详情如下:</p>
     <table cellpadding="0" border="1" align="center">
         <thead>
@@ -85,9 +87,9 @@
         </tbody>
     </table>
     <div align="center">
-    <div >总价为：<jsp:getProperty  name="car" property="total_price"/></div>
-        <a href="pay.html"><button>立即支付</button></a>
-    <a href="index.jsp"><button>取消订单</button></a>
+    <div >总价为：💴￥<jsp:getProperty  name="car" property="total_price"/></div>
+        <a href="pay.html"><button><b>立即支付</b></button></a>
+    <a href="index.jsp"><button><b>取消订单</b></button></a>
     </div>
 </jsp:useBean>
 </body>
