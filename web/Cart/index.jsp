@@ -53,7 +53,7 @@
       <tr>
         <th>编号</th>
         <th>商品名</th>
-        <th>单价</th>
+        <th>单价/Kg</th>
         <th>购买数量</th>
       </tr>
       </thead>

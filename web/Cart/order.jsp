@@ -21,7 +21,6 @@
             width: 300px;
             height: 400px;
         }
-
     </style>
 </head>
 <body>
@@ -42,11 +41,11 @@
             out.println("<a href='login.html'>请登录</a>");
         }
     %>
-    <h1 align="center">购 物 车</h1>
+    <h1 align="center" style="color: #ff9000">购 物 车</h1>
     <p align="center">您选购的订单详情如下:</p>
     <table cellpadding="0" border="1" align="center">
         <thead>
-        <tr><th>编号</th><th>商品名</th><th>单价</th><th>购买数量</th><th>价格</th></tr>
+        <tr><th>编号</th><th>商品名</th><th>单价/Kg</th><th>购买数量</th><th>价格</th></tr>
         </thead>
         <tbody>
         <tr>
