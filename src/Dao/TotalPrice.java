@@ -1,6 +1,6 @@
 package Dao;
 
-public class CountPrice {
+public class TotalPrice {
     private double num_apple;
     private double num_orange;
     private double num_banana;
