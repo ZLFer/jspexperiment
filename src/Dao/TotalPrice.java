@@ -30,7 +30,7 @@ public class TotalPrice {
         this.num_orange = num_orange;
         this.setPri_orange(num_orange * 3.0);
     }
-
+//
     public double getNum_banana() {
         return num_banana;
 
