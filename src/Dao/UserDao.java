@@ -45,14 +45,6 @@ public class UserDao {
 
     public static void main(String[] args) {
 
-        register("tom", "123456");
-        register("cat", "666666");
-        System.out.println(login("tom", "123456"));
-        System.out.println(login("tom", "222222"));
-        System.out.println(updatePassword("tom", "123456", "654321"));
-
-        System.out.println(login("tom", "123456"));
-        System.out.println(login("tom", "654321"));
     }
 
 
